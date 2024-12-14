@@ -3,51 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Labo 8</title>
+        <title>Les céréales</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <section id="hero">
-            <header>
-                <input type="checkbox" name="checkbox" id="checkbox_hero_header" class="deploy-checkbox">
-                <div class="deploy-wrapper">
-                    <nav class="deploy">
-                        <a href="#accueil">Accueil</a>
-                        <a href="#section_1">Section 1</a>
-                        <a href="#section_2">Section 2</a>
-                        <a href="#section_3">Section 3</a>
-                        <a href="#section_4">Section 4</a>
-                    </nav>
-                </div>
-            </header>
+        <header>
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#section_1">Section 1</a>
+                <a href="#section_2">Section 2</a>
+                <a href="#section_3">Section 3</a>
+                <a href="#section_4">Section 4</a>
+            </nav>
+            <a href="https://emile-a.github.io/1w1-main/">Site Github!</a>
+        </header>
+        <section id="accueil">
             <main>
                 <div class="text_container">
-                    <h1>Les céréales</h1>
+                    <h1>Céréales</h1>
                     <p>
-                        Savez-vous que les céréales sont délicieuses??? Ce site va vous parler des meilleures céréales au monde, mais aussi des pires!
+                        Savez-vous que les céréales sont délicieuses??? Ce site va vous parler de tous les meilleurs côtés des céréales!
                     </p>
                     <p>Auteur: Émile Albala</p>
-                    <p>Date de remise: 13 décembre</p>
+                    <p>Département de techniques d'intégration multimédia - Automne 2024 - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
+                    <a href="https://emile-a.github.io/1w1-main/">Site Github!</a>
                 </div>
                 <div class="img_container">
                     <img src="images/logo.png" alt="TP2 Mise en page web">
-                </div>
-            </main>
-            <footer>
-                <p>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
-            </footer>
-        </section>
-        <section id="accueil">
-            <main>
-                <div>
-                    <h1>Accueil</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Fugiat, similique. Praesentium, soluta nam veniam magni 
-                        recusandae odit veritatis similique earum ducimus dolorem 
-                        cum doloremque nesciunt iusto incidunt iste. Accusamus, quia?
-                    </p>
                 </div>
             </main>
         </section>
@@ -60,27 +43,39 @@
                         <input type="text" placeholder="adresse courriel" style="margin-bottom: 5px;"><br>
                         <input type="text" placeholder="nom d'utilisateur" style="margin-bottom: 5px;"><br>
                         <input type="password" placeholder="mot de passe" style="margin-bottom: 20px;"><br>
-                        
-                        <p style="text-decoration: underline;">Fréquence des messages:</p>
-                        <input type="radio" name="type" id="type-1"><label for="type-1">Tous les jours</label><br>
-                        <input type="radio" name="type" id="type-2"><label for="type-2">Une fois par semaine</label><br>
-                        <input type="radio" name="type" id="type-3"><label for="type-3">Une fois par mois</label><br>
-                        <input type="radio" name="type" id="type-4"><label for="type-4">Chaque 7 mars (c'est la journée nationale des céréales!)</label><br>
 
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; padding: 0 10vw;">
+                            <div>
+                                <p style="text-decoration: underline;">Fréquence des messages:</p>
+                                <input type="radio" name="frequency" id="frequency-1"><label for="frequency-1">Tous les jours</label><br>
+                                <input type="radio" name="frequency" id="frequency-2"><label for="frequency-2">Une fois par semaine</label><br>
+                                <input type="radio" name="frequency" id="frequency-3"><label for="frequency-3">Une fois par mois</label><br>
+                                <input type="radio" name="frequency" id="frequency-4"><label for="frequency-4">Chaque 7 mars (c'est la journée nationale des céréales!)</label><br>
+                            </div>
+                            <div>
+                                <p style="text-decoration: underline;">Types de messages:</p>
+                                <input type="checkbox" name="type" id="type-1"><label for="type-1">Grains entiers</label><br>
+                                <input type="checkbox" name="type" id="type-2"><label for="type-2">Céréales commerciales</label><br>
+                                <input type="checkbox" name="type" id="type-3"><label for="type-3">Recettes</label><br>
+                                <input type="checkbox" name="type" id="type-4"><label for="type-4">Faits divers</label><br>
+                                <input type="checkbox" name="type" id="type-5"><label for="type-5">Photos</label><br>
+                            </div>
+                        </div>
+                        
                         <input type="reset" value="réinitialiser" style="margin-top: 10px;">
                         <input type="submit" value="continuer">
                     </form>
                 </div>
-                <img src="/images/logo.png" alt="">
             </main>
         </section>
         <section id="section_2">
             <main>
                 <div>
-                    <h1 style="text-align: center;">Mes céréales préférées</h1>
+                    <h1 style="text-align: center;">Classements</h1>
                     <table>
                         <tbody>
                             <tr>
+                                <th>Les céréales les plus INCROYABLES!</th>
                                 <th style="background-color: lime;">S</th>
                                 <td><img src="./images/minecraftcreepercrunch.jpg" alt="minecraft creeper crunch"></td>
                                 <td><img src="./images/wheat.jpg" alt="wheat"></td>
@@ -88,6 +83,7 @@
                                 <td></td>
                             </tr>
                             <tr>
+                                <th>Céréales bonnes mais pas parfaites</th>
                                 <th style="background-color: yellow;">A</th>
                                 <td><img src="./images/cinnamontoastcrunch.webp" alt="cinnamon toast crunch"></td>
                                 <td><img src="./images/ricekrispies.webp" alt="rice krispies"></td>
@@ -95,6 +91,7 @@
                                 <td></td>
                             </tr>
                             <tr>
+                                <th>Céréales pas spéciales</th>
                                 <th style="background-color: orange;">B</th>
                                 <td><img src="./images/applejacks.jpg" alt="apple jacks"></td>
                                 <td><img src="./images/capncrunch.jpg" alt="cap'n crunch"></td>
@@ -102,24 +99,23 @@
                                 <td></td>
                             </tr>
                             <tr>
+                                <th>Céréales pas terribles...</th>
                                 <th style="background-color: red;">C</th>
                                 <td><img src="./images/frostedflakes.png" alt="frosted flakes"></td>
                                 <td><img src="./images/shreddedwheat.png" alt="shredded wheat"></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                        </tbody>
-                        <tbody>
                             <tr>
+                                <th>Céréales à éviter!</th>
                                 <th style="background-color: fuchsia;">D</th>
                                 <td><img src="./images/fruitloops.webp" alt="fruit loops"></td>
                                 <td><img src="./images/luckycharms.jpg" alt="lucky charms"></td>
                                 <td><img src="./images/cornflakes.webp" alt="corn flakes"></td>
                                 <td></td>
                             </tr>
-                        </tbody>
-                        <tbody>
                             <tr>
+                                <th>Les PIRES céréales!</th>
                                 <th style="background-color: purple;">F</th>
                                 <td><img src="./images/cheerios.jpg" alt="cheerio's"></td>
                                 <td><img src="./images/allbran.jpg" alt="all-bran"></td>
@@ -134,23 +130,44 @@
         <section id="section_3">
             <main>
                 <div>
-                    <h1>Vidéo super cool!</h1>
-                    <iframe src="https://www.youtube.com/embed/gy1Fxjm9Luk" frameborder="0"></iframe>
+                    <h1>Vidéo! 🍿😎</h1>
+                    <iframe src="https://www.youtube.com/embed/XtqwnlHuGdY" frameborder="0"></iframe>
                 </div>
             </main>
         </section>
         <section id="section_4">
             <main>
+                <h1>Articles</h1>
                 <div>
-                    <h1>Section 4</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Fugiat, similique. Praesentium, soluta nam veniam magni 
-                        recusandae odit veritatis similique earum ducimus dolorem 
-                        cum doloremque nesciunt iusto incidunt iste. Accusamus, quia?
-                    </p>
+                    <article>
+                        <img src="./images/fruitloops.webp" alt="fruit loops">
+                        <div>
+                            <h2>Les Fruit Loops causent le cancer?</h2>
+                            <p>À ce qu'il paraît, les fruit loops causent le cancer... Voici comment.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h2>All-bran voté comme meilleure céréale de l'année...</h2>
+                            <p>Faut-il coire en cette conspiration?</p>
+                        </div>
+                        <img src="./images/allbran.jpg" alt="all-bran">
+                    </article>
+                    <article>
+                        <img src="./images/wheat.jpg" alt="wheat">
+                        <div>
+                            <h2>50 faits intéressants sur les céréales!</h2>
+                            <p>Saviez-vous que 50% des américains mangent des céréales comme déjeuner? Apprenez 50 autres faits surprenants!</p>
+                        </div>
+                    </article>
                 </div>
             </main>
         </section>
+        <footer>
+            <p>Émile Albala - Automne 2024</p>
+            <p>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
+            <p>Images trouvées sur Google Images</p>
+            <img src="./images/minecraftcreepercrunch.jpg" alt="minecraft creeper crunch">
+        </footer>
     </body>
 </html>
